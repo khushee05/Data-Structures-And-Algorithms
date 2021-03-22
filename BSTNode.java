@@ -6,6 +6,11 @@ public class BSTNode<T> {
 	BSTNode<T> Left;
 	BSTNode<T> Right;
 	
+	BSTNode()
+	{
+	}
+	
+	
 	BSTNode( T data)
 	{
 		this.data = data;
