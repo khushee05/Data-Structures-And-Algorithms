@@ -6,7 +6,7 @@ public class printBSTCN {
 	{
 		if(root == null)
 			return;
-		System.out.print( root.data + ": ");
+		System.out.print( root.data + ": "); 
 		
 		if(root.Left != null)
 		{
