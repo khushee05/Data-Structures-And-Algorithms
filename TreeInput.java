@@ -3,29 +3,7 @@ package BST;
 import java.util.*;
 public class TreeInput {
 	
-	public static void printBinaryTreeCN(BSTNode<Integer> root)
-	{
-		if(root == null)
-			return;
-		System.out.print( root.data + ": "); 
-		
-		if(root.Left != null)
-		{
-			System.out.print("L" + root.Left.data +", ");
-			
-		}
-		
-		
-		if(root.Right!=null)
-		{
-			System.out.println("R" + root.Right.data) ;
-			
-		}
-		
-		System.out.println();
-		printBinaryTreeCN(root.Left);
-		printBinaryTreeCN(root.Right);
-	}
+	
 	public static BSTNode<Integer> treeInputbetter( boolean isRoot, boolean isLeft , int parentdata)
 	{
 		Scanner scan = new Scanner(System.in);
@@ -38,12 +16,12 @@ public class TreeInput {
 		else if(isLeft)
 		{
 			System.out.print("Enter Left Child of "+ parentdata + ": ");
-			//root.Left.data = scan.nextInt();
+			
 		}
 		else
 		{
 			System.out.print("Enter Right Child of "+ parentdata + ": ");
-			//root.Right.data = scan.nextInt();
+			
 			
 		}
 		
@@ -61,9 +39,11 @@ public class TreeInput {
 	
 	public static void main(String[] args) {
 		
-
+		printBSTCN obj = new printBSTCN();
+		
 		BSTNode<Integer> root = treeInputbetter(true,false,0);
-		printBinaryTreeCN(root);
+		
+		obj.printBinaryTreeCN(root);
 		}
 
 }
