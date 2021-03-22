@@ -6,6 +6,7 @@ public class printBST {
 	{
 		if(root == null)
 			return;
+		System.out.print("Node : ");
 		System.out.println("Root data is: " + root.data);
 		
 		if(root.Left != null)
