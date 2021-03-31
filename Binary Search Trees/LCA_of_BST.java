@@ -1,3 +1,12 @@
+/*
+Given a binary search tree and data of two nodes, find 'LCA' (Lowest Common Ancestor) of the given two nodes in the BST.
+LCA of two nodes A and B is the lowest or deepest node which has both A and B as its descendants. 
+
+1. If out of 2 nodes only one node is present, return that node. 
+2. If both are not present, return -1.
+3. If both are present return LCA.
+*/
+
 package binary_trees;
 
 public class LCA_of_BST {
